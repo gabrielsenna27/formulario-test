@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulário de Cadastro</h1>
+        <form id="formCadastro">
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="input-group">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+            </div>
+            <div class="input-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+            </div>
+            <div class="input-group">
+                <label for="nomePai">Nome do Pai</label>
+                <input type="text" id="nomePai" name="nomePai" placeholder="Digite o nome do seu pai" required>
+            </div>
+            <div class="input-group">
+                <label for="nomeMae">Nome da Mãe</label>
+                <input type="text" id="nomeMae" name="nomeMae" placeholder="Digite o nome da sua mãe" required>
+            </div>
+            <button type="submit">Enviar</button>
+            <p id="responseMessage"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
